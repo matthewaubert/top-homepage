@@ -1,0 +1,155 @@
+/* general */
+
+:root {
+  --gap-050: 0.2rem;
+  --gap-150: 0.6rem;
+  --gap-200: 0.8rem;
+  --gap-300: 1.2rem;
+  --gap-400: 1.6rem;
+  --gap-550: 2.2rem;
+  --gap-600: 2.4rem;
+  --gap-800: 3.2rem;
+  --font-stack: "Roboto", "Helvetica", "Arial", sans-serif;
+  --shadow-2: 0 0 5px rgba(0,0,0,0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: var(--transition-fast);
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: var(--gap-300);
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  font-family: "Playfair Display", var(--font-stack);
+  align-self: center;
+}
+
+p {
+  font-family: var(--font-stack);
+}
+
+.photo {
+  background-color: gray;
+  width: 100%;
+  height: 400px;
+}
+
+/* header */
+
+header {
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: 0;
+  left: 0;
+  bottom: 360px;
+  background-image: linear-gradient(45deg, #6303B1, #ff0099);
+  transform: skewY(-14deg);
+}
+
+header .content {
+  position: relative;
+}
+
+header img {
+  width: 100%;
+}
+
+header .icons {
+  align-self: center;
+  display: flex;
+  gap: var(--gap-300);
+}
+
+header svg {
+  width: 2.2rem;
+}
+
+/* main */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: var(--gap-400);
+}
+
+.card {
+  box-shadow: var(--shadow-2);
+}
+
+.card > .screenshot {
+  background-color: blueviolet;
+  color: white;
+  height: 17.6rem;
+  display: grid;
+  place-content: center;
+}
+
+.description {
+  padding: var(--gap-300);
+}
+
+.description > div {
+  display: flex;
+}
+
+.description .icons {
+  margin-left: auto;
+}
+
+.card svg {
+  width: 1.4rem;
+}
+
+/* footer */
+
+footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-300);
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 550px;
+  background-image: linear-gradient(45deg, #6303B1, #ff0099);
+  z-index: -1;
+}
+
+footer .icons {
+  display: flex;
+  gap: var(--gap-300);
+}
+
+footer svg {
+  width: 2.6rem;
+}
+
+footer > img {
+  width: 100%;
+}

@@ -17,8 +17,16 @@ Create a responsive homepage, something I might find on a portfolio site of sort
    - Download the portraits from <a href="https://www.pexels.com/">pexels.com</a>
    - Include my fonts: `Playfair Display` and `Roboto` from Google Fonts
    - Download icons for GitHub, LinkedIn and Twitter from <a href="https://devicon.dev/">devicon.dev</a>
-   - Download other icons (phone, email, external link) as SVGs from <a href="https://materialdesignicons.com/">devicon.dev</a>
+   - Download other icons (phone, email, external link) as SVGs from <a href="https://materialdesignicons.com/">materialdesignicons.com</a>
 
 3. Build homepage
    - Start out by getting the various sections (e.g. header, projects, contact, etc.) in more or less the right place
    - Then, work from top to bottom of page, filling in, styling, and cleaning up everything
+   - Ensure page is fully responsive
+
+### Credits
+
+- <a href="https://www.pexels.com/photo/woman-in-black-blazer-3727474/">First portrait photo</a> by Anna Shvets
+- <a href="https://www.pexels.com/photo/woman-in-black-blazer-sitting-on-black-office-chair-3727464/">Second portrait photo</a> by Anna Shvets
+- Icon links for GitHub, LinkedIn, and Twitter from <a href="https://devicon.dev/">devicon.dev</a>
+- Other icons (phone, email, external link) from <a href="https://materialdesignicons.com/">materialdesignicons.com</a>
