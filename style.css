@@ -2,10 +2,13 @@
 
 :root {
   --gap-050: 0.2rem;
+  --gap-100: 0.4rem;
   --gap-150: 0.6rem;
   --gap-200: 0.8rem;
+  --gap-250: 1.0rem;
   --gap-300: 1.2rem;
   --gap-400: 1.6rem;
+  --gap-500: 2.0rem;
   --gap-550: 2.2rem;
   --gap-600: 2.4rem;
   --gap-800: 3.2rem;
@@ -33,9 +36,13 @@ html, body {
 }
 
 h1, h2, h3 {
-  font-weight: normal;
+  font-weight: 400;
   font-family: "Playfair Display", var(--font-stack);
   align-self: center;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 p {
@@ -57,26 +64,49 @@ header {
 header::before {
   content: "";
   position: absolute;
-  top: -50px;
+  /* top: -50px; */
+  top: calc(-10px - 12vw);
   right: 0;
   left: 0;
-  bottom: 360px;
+  /* bottom: 550px; */
+  bottom: calc(927px - 68vw);
   background-image: linear-gradient(45deg, #6303B1, #ff0099);
   transform: skewY(-14deg);
 }
 
 header .content {
   position: relative;
+  gap: var(--gap-200);
 }
 
 header img {
   width: 100%;
+  margin-bottom: var(--gap-150);
+}
+
+header h1 {
+  /* font-size: 4.2rem; */
+  font-size: calc(2.8rem + 6vw);
+  line-height: 1.15;
+  position: absolute;
+  /* top: 342px; */
+  top: calc(-145px + 135vw);
+  left: 2.2rem;
+  color: white;
+  filter: drop-shadow(var(--shadow-2));
+}
+
+header p {
+  font-size: 1.53rem;
+  color: #555;
+  font-weight: 300;
+  line-height: 1.4;
 }
 
 header .icons {
   align-self: center;
   display: flex;
-  gap: var(--gap-300);
+  gap: var(--gap-400);
 }
 
 header svg {
