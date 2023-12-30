@@ -1,6 +1,11 @@
 /* general */
 
 :root {
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --purple-600: #9333ea;
   --gap-050: 0.2rem;
   --gap-100: 0.4rem;
   --gap-150: 0.6rem;
@@ -11,8 +16,10 @@
   --gap-500: 2.0rem;
   --gap-550: 2.2rem;
   --gap-600: 2.4rem;
+  --gap-700: 2.8rem;
   --gap-800: 3.2rem;
-  --font-stack: "Roboto", "Helvetica", "Arial", sans-serif;
+  --font-stack-serif: "Playfair Display", "Times", serif;
+  --font-stack-sans-serif: "Roboto", "Helvetica", "Arial", sans-serif;
   --shadow-2: 0 0 5px rgba(0,0,0,0.2);
 }
 
@@ -32,12 +39,13 @@ html, body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding: var(--gap-300);
+  gap: var(--gap-200);
+  padding: var(--gap-300) var(--gap-300) var(--gap-700);
 }
 
 h1, h2, h3 {
   font-weight: 400;
-  font-family: "Playfair Display", var(--font-stack);
+  font-family: var(--font-stack-serif);
   align-self: center;
 }
 
@@ -45,8 +53,13 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-size: 1.4rem;
+}
+
 p {
-  font-family: var(--font-stack);
+  font-family: var(--font-stack-sans-serif);
+  color: var(--neutral-600);
 }
 
 .photo {
@@ -76,7 +89,6 @@ header::before {
 
 header .content {
   position: relative;
-  gap: var(--gap-200);
 }
 
 header img {
@@ -98,9 +110,9 @@ header h1 {
 
 header p {
   font-size: 1.53rem;
-  color: #555;
   font-weight: 300;
   line-height: 1.4;
+  margin-top: -0.4rem;
 }
 
 header .icons {
@@ -127,15 +139,21 @@ header svg {
 }
 
 .card > .screenshot {
-  background-color: blueviolet;
+  background-color: var(--purple-600);
   color: white;
   height: 17.6rem;
+  font-family: var(--font-stack-serif);
+  font-size: 3rem;
+  padding: var(--gap-700);
+  text-align: center;
   display: grid;
   place-content: center;
 }
 
 .description {
   padding: var(--gap-300);
+  display: grid;
+  gap: var(--gap-150);
 }
 
 .description > div {
@@ -144,6 +162,8 @@ header svg {
 
 .description .icons {
   margin-left: auto;
+  display: flex;
+  gap: var(--gap-150);
 }
 
 .card svg {
