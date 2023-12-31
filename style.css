@@ -1,18 +1,12 @@
 /* general */
 
 :root {
-  --neutral-400: #a3a3a3;
-  --neutral-500: #737373;
   --neutral-600: #525252;
-  --neutral-700: #404040;
   --purple-600: #9333ea;
-  --purple-700: #7e22ce;
   --purple-800: #6b21a8;
   --gap-050: 0.2rem;
-  --gap-100: 0.4rem;
   --gap-150: 0.6rem;
   --gap-200: 0.8rem;
-  --gap-250: 1.0rem;
   --gap-300: 1.2rem;
   --gap-350: 1.4rem;
   --gap-400: 1.6rem;
@@ -88,11 +82,9 @@ header {
 header::before {
   content: "";
   position: absolute;
-  /* top: -50px; */
   top: calc(-10px - 12vw);
   right: 0;
   left: 0;
-  /* bottom: 550px; */
   bottom: calc(957px - 68vw);
   background-image: linear-gradient(45deg, #6303B1, #ff0099);
   transform: skewY(-14deg);
@@ -113,11 +105,9 @@ header img {
 }
 
 header h1 {
-  /* font-size: 4.2rem; */
   font-size: calc(2.8rem + 6vw);
   line-height: 1.15;
   position: absolute;
-  /* top: 342px; */
   top: calc(-145px + 135vw);
   left: 2.2rem;
   color: white;
