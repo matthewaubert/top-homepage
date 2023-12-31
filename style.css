@@ -136,7 +136,7 @@ header svg {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16.4rem, 1fr));
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: var(--gap-500);
 }
 
@@ -364,5 +364,19 @@ footer .icons svg {
 
   header p {
     font-size: calc(1.1rem + 0.5vw);
+  }
+
+  /* main */
+
+  main {
+    padding: var(--gap-800) 6.4rem;
+  }
+
+  main .content {
+    padding: 0;
+  }
+
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(18.2rem, 1fr));
   }
 }
