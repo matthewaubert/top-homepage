@@ -6,6 +6,8 @@
   --neutral-600: #525252;
   --neutral-700: #404040;
   --purple-600: #9333ea;
+  --purple-700: #7e22ce;
+  --purple-800: #6b21a8;
   --gap-050: 0.2rem;
   --gap-100: 0.4rem;
   --gap-150: 0.6rem;
@@ -22,7 +24,7 @@
   --font-stack-serif: "Playfair Display", "Times", serif;
   --font-stack-sans-serif: "Roboto", "Helvetica", "Arial", sans-serif;
   --shadow-1: 0 0 5px rgba(0,0,0,0.3);
-  --shadow-2: 0 0 12px rgba(0,0,0,0.2);
+  --shadow-2: 0 0 12px rgba(0,0,0,0.3);
 }
 
 * {
@@ -68,6 +70,13 @@ p {
 img {
   display: block;
   width: 100%;
+}
+
+.icons svg:hover,
+main svg:hover {
+  cursor: pointer;
+  fill: var(--purple-800);
+  transform: scale(1.08);
 }
 
 /* header */
@@ -144,6 +153,12 @@ header svg {
 
 .card {
   box-shadow: var(--shadow-2);
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+  top: -3px;
 }
 
 .card > .screenshot {
@@ -166,6 +181,16 @@ header svg {
 .description > div {
   display: flex;
   margin-top: -0.2rem;
+}
+
+.description a {
+  text-decoration: none;
+  color: black;
+}
+
+.description a:hover {
+  text-decoration: underline;
+  color: var(--purple-800);
 }
 
 .description .icons {
@@ -227,6 +252,10 @@ address {
 
 footer svg {
   fill: white;
+}
+
+footer .icons svg:hover {
+  fill: #f0abfc;
 }
 
 footer .icons {
