@@ -12,6 +12,7 @@
   --gap-200: 0.8rem;
   --gap-250: 1.0rem;
   --gap-300: 1.2rem;
+  --gap-350: 1.4rem;
   --gap-400: 1.6rem;
   --gap-500: 2.0rem;
   --gap-550: 2.2rem;
@@ -55,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
 }
 
 p {
@@ -128,9 +129,9 @@ header svg {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16.4rem, 1fr));
   grid-template-rows: repeat(3, 1fr);
-  gap: var(--gap-400);
+  gap: var(--gap-500);
 }
 
 .card {
@@ -142,27 +143,29 @@ header svg {
   color: white;
   height: 17.6rem;
   font-family: var(--font-stack-serif);
-  font-size: 3rem;
-  padding: var(--gap-700);
+  font-size: 2.8rem;
   text-align: center;
   display: grid;
   place-content: center;
 }
 
 .description {
-  padding: var(--gap-300);
+  padding: var(--gap-350);
   display: grid;
-  gap: var(--gap-150);
+  gap: var(--gap-200);
 }
 
 .description > div {
   display: flex;
+  margin-top: -0.2rem;
 }
 
 .description .icons {
   margin-left: auto;
   display: flex;
   gap: var(--gap-150);
+  position: relative;
+  top: 3px;
 }
 
 .card svg {
@@ -220,13 +223,13 @@ footer svg {
   }
 
   .content, header {
-    padding: var(--gap-800) 6.6rem;
+    padding: var(--gap-800) 6.4rem;
   }
 
   /* header */
 
   header {
-    padding: 9.6rem 6.6rem var(--gap-800) 6.6rem;
+    padding: 9.4rem 6.4rem var(--gap-800) 6.4rem;
   }
 
   header .content {
